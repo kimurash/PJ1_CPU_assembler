@@ -1,0 +1,8 @@
+ST ACC [21]
+ST ACC (22)
+ST ACC [IX+23]
+ST ACC (IX+24)
+ST IX [31]
+ST IX (32)
+ST IX [IX+33]
+ST IX (IX+34)

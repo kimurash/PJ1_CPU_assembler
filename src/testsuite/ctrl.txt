@@ -1,0 +1,6 @@
+NOP
+HLT
+OUT
+IN
+RCF
+SCF
