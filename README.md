@@ -97,7 +97,7 @@ Rustのプログラムをコンパイルしてバイナリを生成するため�
 2. ターゲット環境向けのリンカ
    - Linux: gcc, binutilsパッケージ
    - MacOS: Xcodeのコマンドライン・デベロッパツール
-   - Windows MSVC: Microsoft Visual C++ビルドツール
+   - Windows: MSVC ... Microsoft Visual C++ビルドツール
 
 ### 実行方法
 1. 変換したいアセンブリプログラムを用意する．
