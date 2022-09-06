@@ -122,7 +122,7 @@ fn discern_opr_a(opr_a: &str) -> OperandA {
         "IX" => OperandA::IX,
         _ => {
             if RE_ADDR.is_match(opr_a) {
-                OperandA::Dest(u8::from_str_radix(opr_a, 16).unwrap())
+                OperandA::DEST(u8::from_str_radix(opr_a, 16).unwrap())
             } else if RE_SYMBOL.is_match(opr_a) {
                 /* [HACK]: 無駄な変換
                     この関数に渡すときStringを&strへ変換し,

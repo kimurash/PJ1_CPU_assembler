@@ -61,7 +61,7 @@ impl std::fmt::Display for Instruction {
 pub enum OperandA {
     ACC,            // アキュムレータ
     IX,             // インデックスレジスタ
-    Dest(u8),       // 分岐先アドレス
+    DEST(u8),       // 分岐先アドレス
     Symbol(String), // 記号アドレス
     /*
         分岐先アドレスと記号アドレスはオペランドAに分類されないが

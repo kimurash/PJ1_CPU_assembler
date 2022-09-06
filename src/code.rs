@@ -174,7 +174,10 @@ fn form_shift(instrct: &Instruction) -> String {
 }
 
 // 分岐命令の命令語を形成する
-fn form_branch(instrct: &mut Instruction, symbol_table: &HashMap<String, u8>) -> String {
+fn form_branch(
+    instrct: &mut Instruction, 
+    symbol_table: &HashMap<String, u8>
+) -> String {
     let mut base = 0x30u8;
 
     // 分岐条件によって加算
@@ -187,7 +190,7 @@ fn form_branch(instrct: &mut Instruction, symbol_table: &HashMap<String, u8>) ->
         Stringの所有権をムーブできない.
     */
     match &instrct.opr_a {
-        Some(OperandA::Dest(addr)) => {
+        Some(OperandA::DEST(addr)) => {
             format!("{:02X} {:02X}\n", base, addr)
         }
         Some(OperandA::Symbol(symbol)) => {

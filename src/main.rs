@@ -5,7 +5,7 @@ use std::collections::HashMap;
 
 fn main() {
     let mut symbol_table: HashMap<String, u8> = HashMap::new();
-    match parser::parse("./src/testsuite/phase2/mult.txt", &mut symbol_table) {
+    match parser::parse("./src/input.txt", &mut symbol_table) {
         Ok(prog) => {
             // プログラムのダンプ
             // for inst in prog.iter() {
