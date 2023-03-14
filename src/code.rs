@@ -42,8 +42,8 @@ pub fn assemble(
 }
 
 /*
-    各種命令と命令語との対応をHashMapのグローバル変数として
-    用意しようと試みたが,HashMapはコンパイル時に値が確定しないため不可
+    各種命令と命令語との対応をHashMapのグローバル変数として用意しようと試みたが,
+    HashMapはコンパイル時に値が確定しないため不可
     - https://qiita.com/tatsuya6502/items/bed3702517b36afbdbca
     - https://qnighy.hatenablog.com/entry/2018/06/17/190000
 */
