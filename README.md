@@ -1,4 +1,4 @@
-# PJ2_CPU_assembler
+# PJ2-CPU-assembler
 
 プロジェクト実習2の教育用CPUに対応したアセンブラ
 
